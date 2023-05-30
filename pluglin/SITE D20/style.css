@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+    background: url(relogios/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000000;
+    height: 100vh;
+    transition: 2s all;
+}
+/*================================================================*/
+body.dark-mode {
+    background: url(relogios/background-dark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    transition: 2s all;
+    
+    #toggle-mode{
+        background-image: url(icons/lua.png);
+    }
+
+    .container_acessorios{
+        color: #fff;
+    }
+
+    #comprar{
+        background-color: #4b8bb1;
+    }
+
+
+
+      #D20light{
+        display: none;
+      }
+      .sombra{
+        display: none;
+      }
+
+      #D20dark{
+        display: flex;
+        position: absolute;
+      }
+
+      .sombra2{
+        background-color: #1b1b1b;
+        width: 250px;
+        height: 7px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: 0 0 8px 9px #1b1b1b;
+        animation-name: sombra;
+        animation: sombra 3s infinite;
+        bottom: 20px;
+        right: 235px;
+    }
+    
+    @keyframes sombra2{
+        0%{width:230px;}
+        50%{width: 290px; right: 205px;}
+        100%{width: 230px;}
+    }
+
+      
+
+      .rodape{
+        background-color: #1b1b1b88;
+        color: #ffffff;
+        transition: 2s all;
+    }
+
+    .txt #titulo{
+        color: #ffffff;
+        transition: 2s all;
+    
+    }
+
+    #compra a{
+        background-color: #316788;
+    }
+
+    #compra a:hover{
+        background-color:   #7ca4bd ;
+    }
+
+  }
+  /*================================================================*/
+
+
+
+  #toggle-mode{
+    background: url(icons/sol.png);
+    background-repeat: repeat-y;
+    padding: 25px;
+    top: 0px;
+    font-size: large;
+    color: #ffffff;
+    margin-left: 5px;
+    transition: .5s linear;
+  }
+
+  #toggle-mode:hover{
+    cursor: pointer;
+  }
+
+
+title{
+    display: none;
+}
+
+
+
+/*==========================animação===============================*/
+
+#box{
+    
+    border-radius:1000px;
+    width: 600px;
+    height: 550px;
+    position: absolute;
+    top: 50px ;
+    right: 5%;
+}
+
+#D20light{
+    width: 500px;
+    position: absolute;
+    animation-name: flutuar;
+    animation: flutuar 3s infinite;
+    }
+
+    #D20dark{
+        width: 350px;
+        right: 170px;
+        display: none;
+        position: absolute;
+        animation-name: flutuar2;
+        animation: flutuar2 3s infinite;
+    }
+    @keyframes flutuar2{
+    
+        0%{top: 18%;}
+        50%{top: 24%;}
+        100%{top: 18%;}
+    
+    }
+    
+    
+
+@keyframes flutuar{
+    
+    0%{top: 5%;}
+    50%{top: 12%;}
+    100%{top: 5%;}
+
+}
+
+
+
+.sombra{
+    background-color: #1b1b1b;
+    width: 250px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 0 8px 9px #1b1b1b;
+    animation-name: sombra;
+    animation: sombra 3s infinite;
+    bottom: 20px;
+    right: 240px;
+}
+
+@keyframes sombra{
+    0%{width:230px;}
+    50%{width: 290px; right: 210px;}
+    100%{width: 230px;}
+}
+
+
+/*================================================================*/
+
+.txt{
+    margin-top: 6%;
+    margin-left: 13.2%;
+    width: 600px;
+    height: 300px;
+}
+
+.txt p{
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: left ;
+    
+}
+
+.txt #titulo{
+    position: relative;
+    color: #000000;
+
+}
+
+#titulo{
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Niconne', cursive;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    
+}
+
+#compra{
+    
+    position: absolute;
+    top: 65%;
+    left: 12.3%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.botão{
+   display: flex;
+   justify-content: center;
+}
+
+#compra a{
+    background-color:#07527e ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    width:200px;
+    height: 30px;
+    border-radius: 0px 10px 0px 10px;
+    align-items: center;
+    margin: 10px;
+    transition: .2s linear
+}
+
+#compra a:hover{
+ 
+    background-color: #043d5e ;
+}
+
+/*================================================================*/
+
+.menu{
+    background-color: #7371fe59 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.menu ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul li a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 1px;
+    transition: .2s linear;
+    padding: 16px;
+}
+
+.menu ul li a:hover{
+    background-color: #7371fe;
+    
+}
+
+
+/*================================================================*/
+
+
+.video{
+    width: 400px;
+    margin: 100px 30px;
+    height: 300px;
+
+    border-radius: 30px;
+}
+
+#box_video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video:hover{
+    transition: .2s linear;
+    box-shadow: 0px 0px 30px #f3f3f3;
+}
+
+
+/*===========================rodapé====================================*/
+
+#footer_app{
+    position: absolute;
+    top: 75%;
+}
+
+.rodape{
+    background-color: #afafaf59;
+    color: #1b1b1b;
+    font-style: inherit;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 17.1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: 2s all;
+
+}
+.rodape ul{
+    margin-left: 400px;
+    font-size: medium;
+}
+
+.rodape .icons .icone{
+    
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    align-items: baseline;
+    width: 25px;
+    height: auto;
+    margin-right: 500px;
+}
+
+.rodape .icons .icone:hover{
+    background-color: rgba(65, 65, 65, 0.397);
+    padding: 2px;
+    border-radius: 5px;
+    
+}
+
+/*===========================APP====================================*/
+
+
+#tela2{
+    display: grid;
+    grid-template-columns: repeat(4,.3fr);
+    align-items: center;
+
+    margin-left: 8%;
+
+    height: 90vh;
+}
+
+
+
+
+.screen{
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    transition: .3s linear;
+}
+.screen:hover{
+    width: 250px;
+    
+}
+
+#download{
+    background: linear-gradient(#114105,#0a7a22);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 42% 0px 42%;
+    border-radius: 5px;
+    margin-top: 0px;
+    transition: .2s linear;
+}
+
+#download:hover{
+    background: linear-gradient(#0c2e03,#085c1a);
+    box-shadow: 0px 0px 10px #0eb909;
+    
+}
+
+/*=====================================================================*/
+
+
+.acessorios{
+    display: grid;
+    grid-template-columns: repeat(4,0.2fr);
+    justify-content: center;
+}
+
+
+.container_acessorios{
+    background-color: #7371fe59 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000000;
+    border-radius: 0px 30px 0px 30px;
+    width: 250px;
+    height: 300px;
+    margin: 90px 10px 0px 10px;
+    
+
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_acessorios:hover{
+    transition: .2s;
+    box-shadow: 0px 0px 10px white;
+}
+
+
+.container_acessorios img{
+    max-width: 150px;
+    max-height: 150px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.container_acessorios img:hover{
+    padding: 1px;
+}
+
+.comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#comprar{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #07527e;
+    padding: 5px;
+    border-radius: 0px 10px 0px 10px;
+}
+
